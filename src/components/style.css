@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.main-container{
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.todo-box{
+    margin: auto;
+    min-height: 75vh;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px -5px #F8043F;
+}
+
+.input-container{
+    display: flex;
+    justify-content:center;
+    margin-top: 30px;
+}
+
+.input-container input{
+    width: 50%;
+    margin-right: 20px;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size:16px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.main-container .validation{
+    color: #fff;
+    text-align: center;
+    color: #F8043F;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.input-container .addbtn{
+    background: #F8043F;
+    color: #fff;
+}
+
+.input-container .addbtn:hover{
+    background: #fff;
+    color:#F8043F;
+}
+
+.heading{
+    color: #fff;
+    text-align: center;
+}
+
+.todoimg{
+    display: block;
+    max-width: 120px;
+    margin: auto;
+}
+
+
+/* store container */
+.store-container{
+    margin: auto;
+}
+
+.store-container .items{
+    display: flex;
+    justify-content: center;
+    padding-top:-10px ;
+}
+
+.store-container .items li{
+    color: #fff;
+    background: #AE01FF;
+    width: 50%;
+    height: 50px;
+    margin-right:20px;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    list-style: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+}
+
+.items .dltbtn{
+    background: #fff;
+    color: #F8043F;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.store-container .items li:hover{
+    background: #fff;
+    color: #F8043F;
+}
+
+.items .dltbtn:hover{
+    background: #F8043F;
+    color:#fff;
+}
+.items li .true{
+    text-decoration: none;
+}
+
+@media (max-width:600px){
+    .todo-box{
+        padding: 10px 20px;
+        width:auto;
+    }
+    
+    .input-container input{
+        width: 70%;
+    }
+    .store-container .items li{
+        width: 70%;
+    }
+}
